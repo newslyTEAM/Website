@@ -24,35 +24,35 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://newslyglobal.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Newsly Global — Clarity before AI. Growth after.",
+    default: "Newsly Global — Turn AI Into Real Growth",
     template: "%s | Newsly Global",
   },
   description:
-    "Newsly Global helps established businesses find out if AI is right for their company, where it can create real value, and what to do next. Start with the $1,495 AI Assessment.",
+    "The AI Growth Program for established businesses — assessment, course, and three live coaching calls in one structured path.",
   applicationName: "Newsly Global",
   keywords: [
+    "AI growth program",
+    "AI course for business",
+    "AI coaching for business",
     "AI assessment for business",
-    "AI readiness assessment",
-    "AI business audit",
-    "AI consulting for small business",
+    "AI training for business owners",
     "AI strategy for growing businesses",
     "business AI readiness",
     "AI implementation planning",
-    "AI training for business owners",
   ],
   openGraph: {
-    title: "Newsly Global — Clarity before AI. Growth after.",
+    title: "Newsly Global — Turn AI Into Real Growth",
     description:
-      "A $1,495 AI Assessment for established businesses. Know if your business is ready for AI before you waste time or money.",
+      "The AI Growth Program: assessment, course, and three live coaching calls — built for established businesses.",
     url: siteUrl,
     siteName: "Newsly Global",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Newsly Global — Clarity before AI. Growth after.",
+    title: "Newsly Global — Turn AI Into Real Growth",
     description:
-      "A $1,495 AI Assessment for established businesses. Know if your business is ready for AI before you waste time or money.",
+      "The AI Growth Program: assessment, course, and three live coaching calls — built for established businesses.",
   },
   robots: { index: true, follow: true },
 };
@@ -63,25 +63,18 @@ const organizationJsonLd = {
   name: "Newsly Global",
   url: siteUrl,
   description:
-    "Newsly Global helps established businesses understand if they are ready for AI, where it can create value, and what to do next.",
-  slogan: "Clarity before AI. Growth after.",
+    "Newsly Global runs The AI Growth Program — a structured path of assessment, course, and live coaching for established businesses.",
+  slogan: "Turn AI Into Real Growth",
 };
 
 const serviceJsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "AI Readiness Assessment",
+  serviceType: "AI Growth Program",
   provider: { "@type": "Organization", name: "Newsly Global", url: siteUrl },
   areaServed: "United States",
   description:
-    "A structured business audit that shows whether an established company is ready for AI, where AI can create real value, and what next step makes sense.",
-  offers: {
-    "@type": "Offer",
-    price: "1495.00",
-    priceCurrency: "USD",
-    availability: "https://schema.org/InStock",
-    url: `${siteUrl}/assessment`,
-  },
+    "The AI Growth Program for established businesses: an AI assessment, a practical course, and three live coaching calls — built so AI actually gets put to work.",
 };
 
 export default function RootLayout({

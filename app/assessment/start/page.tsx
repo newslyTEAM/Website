@@ -7,9 +7,9 @@ import { IntakeForm } from "@/components/forms/IntakeForm";
 import { ShieldCheck, ArrowLeft } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Get your AI Assessment",
+  title: "Apply for The AI Growth Program",
   description:
-    "Start your $1,495 AI Assessment. Tell us a bit about your business and we'll be in touch to schedule your intro call.",
+    "Tell us about your business. We'll review your intake and reach out to schedule your discovery call.",
   robots: { index: false, follow: false },
 };
 
@@ -17,16 +17,16 @@ export default function AssessmentStartPage() {
   return (
     <>
       <PageHero
-        eyebrow="Step 1 of 2 · Your details"
-        title="Get your AI Assessment"
-        lede="Tell us a bit about your business. Once we review your intake, we'll confirm the details and schedule your intro call."
+        eyebrow="Apply · Tell us about your business"
+        title="Apply for The AI Growth Program"
+        lede="Tell us a bit about your business. Once we review your intake, we'll reach out to schedule your discovery call."
       >
         <Link
-          href="/assessment"
+          href="/#how-it-works"
           className="inline-flex items-center gap-2 text-[0.875rem] font-medium text-slate hover:text-navy"
         >
           <ArrowLeft className="h-4 w-4" strokeWidth={1.5} />
-          Back to assessment overview
+          Back to how the program works
         </Link>
       </PageHero>
 
@@ -35,32 +35,22 @@ export default function AssessmentStartPage() {
           <div className="grid gap-12 lg:grid-cols-[1fr_1.6fr] lg:gap-16 items-start">
             <aside className="lg:sticky lg:top-28">
               <div className="rounded-lg border border-line bg-white p-7 shadow-[var(--shadow-soft)]">
-                <div className="eyebrow mb-4">Your assessment</div>
-                <div className="flex items-baseline gap-2">
-                  <span
-                    className="text-[2.25rem] leading-none font-bold text-navy tracking-tight"
-                    style={{ fontFamily: "var(--font-display)" }}
-                  >
-                    $1,495
-                  </span>
-                  <span className="text-slate text-[0.875rem]">one-time</span>
-                </div>
+                <div className="eyebrow mb-4">The program</div>
                 <h3
-                  className="mt-4 text-[1.125rem] text-navy"
+                  className="text-[1.25rem] text-navy"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  AI Assessment
+                  The AI Growth Program
                 </h3>
-                <p className="mt-2 text-[0.9375rem] text-slate leading-relaxed">
-                  A structured business review, a clear recommendation, and a
-                  next step built for your company.
+                <p className="mt-3 text-[0.9375rem] text-slate leading-relaxed">
+                  A structured path for established businesses to actually use
+                  AI well.
                 </p>
                 <ul className="mt-6 space-y-2 text-[0.875rem] text-slate">
-                  <li>• Business readiness review</li>
-                  <li>• Workflow and systems review</li>
-                  <li>• AI opportunity mapping</li>
-                  <li>• Risk and gap review</li>
-                  <li>• Clear next-step recommendation</li>
+                  <li>• AI Assessment built around your business</li>
+                  <li>• Practical course for owners and teams</li>
+                  <li>• Three live coaching calls with us</li>
+                  <li>• Optional follow-on consulting</li>
                 </ul>
                 <div className="mt-6 pt-6 border-t border-line flex items-start gap-3 text-[0.8125rem] text-slate">
                   <ShieldCheck
@@ -68,8 +58,8 @@ export default function AssessmentStartPage() {
                     strokeWidth={1.75}
                   />
                   <span>
-                    Your information is kept confidential. We confirm the
-                    details with you by email after intake review.
+                    Your information is kept confidential. We'll confirm the
+                    next step with you by email after intake review.
                   </span>
                 </div>
               </div>

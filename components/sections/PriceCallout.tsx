@@ -3,14 +3,18 @@ import { Check } from "lucide-react";
 import { ConcentricRings, CornerTicks } from "@/components/decor";
 
 export function PriceCallout({
-  title = "Start with the AI Assessment",
+  eyebrow = "The program",
+  title = "The AI Growth Program",
   bullets,
-  ctaLabel = "Get Your Assessment",
-  ctaHref = "/assessment/start",
+  ctaLabel = "Book a Discovery Call",
+  ctaHref = "/contact",
   secondaryHref,
   secondaryLabel,
   note,
+  rightTitle = "One unified program",
+  rightBody = "Assessment, course, and coaching in one structured path.",
 }: {
+  eyebrow?: string;
   title?: string;
   bullets: string[];
   ctaLabel?: string;
@@ -18,6 +22,8 @@ export function PriceCallout({
   secondaryHref?: string;
   secondaryLabel?: string;
   note?: string;
+  rightTitle?: string;
+  rightBody?: string;
 }) {
   return (
     <div className="relative overflow-hidden rounded-lg bg-navy text-bg shadow-[var(--shadow-lift)]">
@@ -55,7 +61,7 @@ export function PriceCallout({
             style={{ fontFamily: "var(--font-sans)" }}
           >
             <span className="h-px w-6 bg-gold" aria-hidden />
-            The offer
+            {eyebrow}
           </span>
           <h3
             className="mt-4 text-[1.5rem] sm:text-[1.75rem] md:text-[2.25rem] leading-tight text-bg break-words"
@@ -77,17 +83,14 @@ export function PriceCallout({
         </div>
 
         <div className="relative lg:border-l lg:border-bg/15 lg:pl-14 flex flex-col justify-center">
-          <div className="flex items-baseline gap-2">
-            <span
-              className="text-[3rem] md:text-[3.5rem] leading-none font-bold text-bg tracking-tight"
-              style={{ fontFamily: "var(--font-display)" }}
-            >
-              $1,495
-            </span>
-            <span className="text-bg/60 text-[0.9375rem]">one-time</span>
+          <div
+            className="text-[1.625rem] md:text-[2rem] leading-tight font-bold text-bg tracking-tight"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            {rightTitle}
           </div>
           <p className="mt-3 text-bg/70 text-[0.9375rem] leading-relaxed">
-            A focused business audit. A clear recommendation.
+            {rightBody}
           </p>
 
           <div className="mt-7 flex flex-col gap-3">

@@ -61,13 +61,13 @@ export function MobileMenu({ items }: { items: NavItem[] }) {
             </Link>
           ))}
           <ButtonLink
-            href="/assessment"
+            href="/contact"
             variant="primary"
             size="lg"
             className="mt-6 w-full"
             onClick={() => setOpen(false)}
           >
-            Get Assessment
+            Book a Discovery Call
           </ButtonLink>
         </nav>
       </div>

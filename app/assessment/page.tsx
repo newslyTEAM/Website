@@ -8,13 +8,13 @@ import { Container } from "@/components/layout/Container";
 import { Card } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "AI Assessment for Business | $1,495 AI Readiness Audit",
+  title: "The AI Assessment — Step 1 of The AI Growth Program",
   description:
-    "A focused business audit that shows if your established company is ready for AI, where it can help, and what you should do next.",
+    "The AI Assessment is the first step inside The AI Growth Program — a structured business review that shapes your course path and three coaching calls.",
   openGraph: {
-    title: "AI Assessment for Business — $1,495",
+    title: "The AI Assessment — Step 1 of The AI Growth Program",
     description:
-      "A focused audit for established businesses. Clear answers before your next AI move.",
+      "A focused business review for established companies, included in The AI Growth Program.",
   },
 };
 
@@ -23,14 +23,14 @@ const whatsIncluded = [
   "Workflow and systems review",
   "AI opportunity mapping",
   "Risk and gap review",
-  "Clear recommendation on next steps",
+  "A roadmap that drives the rest of the program",
 ];
 
 const whoItsFor = [
   "You run an established business",
   "You want to use AI wisely, not blindly",
-  "You want expert review before investing more",
-  "You need clear direction, not more noise",
+  "You want a real plan, not just ideas",
+  "You're ready to invest the time to do it well",
 ];
 
 const whoItsNotFor = [
@@ -44,26 +44,14 @@ export default function AssessmentPage() {
   return (
     <>
       <PageHero
-        eyebrow="The AI Assessment"
+        eyebrow="Step 1 of the program"
         title={
           <>
             The AI Assessment for <span className="text-navy/60">established businesses</span>
           </>
         }
-        lede="A focused audit to show if your business is ready for AI, where it can help, and what you should do next."
-      >
-        <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-5">
-          <span
-            className="text-[2.25rem] font-bold text-navy tracking-tight"
-            style={{ fontFamily: "var(--font-display)" }}
-          >
-            $1,495
-          </span>
-          <span className="text-slate text-[0.9375rem]">
-            one-time · delivered as a structured review
-          </span>
-        </div>
-      </PageHero>
+        lede="The first step inside The AI Growth Program. A focused business review that shows where AI fits — and shapes the course path and coaching calls that follow."
+      />
 
       {/* What this is */}
       <Section tone="surface">
@@ -72,7 +60,7 @@ export default function AssessmentPage() {
             <SectionHeading
               eyebrow="What it is"
               title="What this assessment does"
-              lede="This is not a quiz. This is a business-level review of how your company works today and how ready it is for AI."
+              lede="This is not a quiz. It is a business-level review of how your company works today and how ready it is for AI."
             />
             <div className="prose-x">
               <p>
@@ -80,9 +68,9 @@ export default function AssessmentPage() {
                 opportunity areas.
               </p>
               <p>
-                Then we give you clear guidance on what makes sense next —
-                without pressure, without hype, and without selling AI for the
-                sake of AI.
+                The assessment then drives the rest of the program — the course
+                path you focus on, and the topics we cover in your three live
+                coaching calls.
               </p>
             </div>
           </div>
@@ -95,7 +83,7 @@ export default function AssessmentPage() {
           <SectionHeading
             eyebrow="Scope"
             title="What is included"
-            lede="Five focused areas. One clear recommendation."
+            lede="Five focused areas. One clear roadmap to drive the program."
           />
           <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_1fr] items-start">
             <Card>
@@ -103,13 +91,13 @@ export default function AssessmentPage() {
             </Card>
             <div className="prose-x lg:pl-4">
               <p>
-                Next steps may include consulting, implementation support,
-                training, courses, or waiting until the business is better
-                prepared.
+                The assessment isn't a separate purchase — it's the kickoff for
+                your program. The output shapes the course modules you focus on
+                and what we cover together in coaching.
               </p>
               <p>
-                Not every company needs the same next step. That is why the
-                assessment comes first.
+                Every business has different priorities. The assessment makes
+                sure the program is built around yours.
               </p>
             </div>
           </div>
@@ -144,51 +132,29 @@ export default function AssessmentPage() {
         </Container>
       </Section>
 
-      {/* Why $1,495 */}
-      <Section>
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:gap-16 items-start">
-            <SectionHeading
-              eyebrow="Why it costs $1,495"
-              title="Why this matters"
-            />
-            <div className="prose-x">
-              <p>
-                The cost of the assessment is small compared to the cost of
-                making the wrong AI decision.
-              </p>
-              <p>
-                This is designed to help you avoid wasted spending, bad tools,
-                and poor implementation.
-              </p>
-              <p>
-                It gives you a smart starting point based on your business, not
-                generic advice.
-              </p>
-            </div>
-          </div>
-        </Container>
-      </Section>
-
-      {/* Price callout */}
-      <Section tone="surface" spacing="tight">
+      {/* Program callout */}
+      <Section spacing="tight">
         <Container>
           <PriceCallout
-            title="Start with clarity"
-            bullets={whatsIncluded}
-            ctaLabel="Get Your AI Assessment"
-            ctaHref="/assessment/start"
-            note="A focused business-level review. Delivered with care."
+            eyebrow="The program"
+            title="The AI Growth Program"
+            bullets={[
+              "Step 1: Your AI Assessment",
+              "Step 2: A practical course made for established businesses",
+              "Step 3: Three live coaching calls with us",
+              "Optional follow-on consulting if you need it",
+            ]}
+            ctaLabel="Book a Discovery Call"
+            ctaHref="/contact"
+            secondaryLabel="See how it works"
+            secondaryHref="/#how-it-works"
+            rightTitle="One unified program"
+            rightBody="The assessment is the first step — the rest of the program is built around what we find."
           />
         </Container>
       </Section>
 
-      <FinalCta
-        eyebrow="Ready"
-        title="Make your next AI move with confidence."
-        body="Start the assessment. Get clarity. Decide the right step for your business."
-        ctaLabel="Get Started"
-      />
+      <FinalCta />
     </>
   );
 }

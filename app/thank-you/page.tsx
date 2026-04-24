@@ -31,7 +31,7 @@ export default async function ThankYouPage({
         }
         lede={
           isIntake
-            ? "Thank you for purchasing the AI Assessment. Your intake has been received. Our team will review your information and follow up with the next step."
+            ? "Thank you for applying to The AI Growth Program. Your intake has been received. Our team will review your information and reach out to schedule your discovery call."
             : "Thanks for reaching out. We read every message and respond personally — usually within one business day."
         }
       />
@@ -50,17 +50,17 @@ export default async function ThankYouPage({
             </h2>
             <p className="text-slate text-[1rem] leading-relaxed max-w-xl mx-auto">
               {isIntake
-                ? "We review your intake, prepare the assessment, and reach out to schedule your intro call. Keep an eye on your inbox."
-                : "We've logged your message and will get back to you shortly. In the meantime, you can explore the AI Assessment or read about our services."}
+                ? "We review your intake and reach out to schedule your discovery call. Keep an eye on your inbox."
+                : "We've logged your message and will get back to you shortly. In the meantime, you can read more about the program or our services."}
             </p>
             <div className="mt-8 flex flex-col sm:flex-row justify-center gap-3">
               {isIntake ? (
-                <ButtonLink href="/assessment" variant="primary" size="md">
-                  Learn more about the assessment
+                <ButtonLink href="/#how-it-works" variant="primary" size="md">
+                  See how the program works
                 </ButtonLink>
               ) : (
-                <ButtonLink href="/assessment" variant="primary" size="md">
-                  See the AI Assessment
+                <ButtonLink href="/#how-it-works" variant="primary" size="md">
+                  See how the program works
                 </ButtonLink>
               )}
               <ButtonLink href="/" variant="secondary" size="md">

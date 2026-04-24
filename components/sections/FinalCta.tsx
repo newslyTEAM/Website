@@ -3,11 +3,11 @@ import { Container } from "@/components/layout/Container";
 import { ConcentricRings } from "@/components/decor";
 
 export function FinalCta({
-  eyebrow = "Final step",
-  title = "Do not guess your way into AI.",
-  body = "Start with a clear assessment and make the next move with confidence.",
-  ctaLabel = "Get Your $1,495 AI Assessment",
-  ctaHref = "/assessment/start",
+  eyebrow = "Ready to start",
+  title = "Turn AI into real growth.",
+  body = "Book a discovery call. We'll talk through your business and whether the program is the right next step.",
+  ctaLabel = "Book a Discovery Call",
+  ctaHref = "/contact",
 }: {
   eyebrow?: string;
   title?: string;

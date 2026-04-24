@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Newsly Global — Clarity before AI. Growth after.";
+export const alt = "Newsly Global — Turn AI Into Real Growth";
 
 export default function OG() {
   return new ImageResponse(
@@ -52,7 +52,7 @@ export default function OG() {
                 letterSpacing: 3,
               }}
             >
-              AI Clarity
+              The AI Growth Program
             </div>
           </div>
         </div>
@@ -69,19 +69,19 @@ export default function OG() {
               fontWeight: 600,
             }}
           >
-            AI Readiness for Established Businesses
+            For Established Businesses
           </div>
           <div
             style={{
               display: "flex",
-              fontSize: 64,
+              fontSize: 72,
               fontWeight: 700,
               letterSpacing: -1.5,
               lineHeight: 1.05,
               maxWidth: 960,
             }}
           >
-            Know if your business is ready for AI — before you waste time or money.
+            Turn AI Into Real Growth.
           </div>
         </div>
 
@@ -97,8 +97,7 @@ export default function OG() {
         >
           <div style={{ display: "flex" }}>newslyglobal.com</div>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <span style={{ color: "#C8A46B" }}>$1,495</span>
-            <span>AI Assessment</span>
+            <span style={{ color: "#C8A46B" }}>Assessment · Course · Coaching</span>
           </div>
         </div>
       </div>

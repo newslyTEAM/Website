@@ -211,10 +211,10 @@ export function IntakeForm() {
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-4 border-t border-line">
         <p className="text-[0.8125rem] text-slate max-w-sm">
           By submitting, your intake goes to our team. We'll confirm details and
-          schedule your intro call by email.
+          schedule your discovery call by email.
         </p>
         <Button type="submit" variant="primary" size="lg" withArrow disabled={pending}>
-          {pending ? "Submitting..." : "Get my assessment"}
+          {pending ? "Submitting..." : "Submit application"}
         </Button>
       </div>
     </form>

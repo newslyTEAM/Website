@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Compass, Workflow, GraduationCap } from "lucide-react";
+import { Compass, Workflow, Users } from "lucide-react";
 import { PageHero } from "@/components/sections/PageHero";
 import { Section, SectionHeading } from "@/components/sections/Section";
 import { FinalCta } from "@/components/sections/FinalCta";
@@ -8,26 +8,26 @@ import { Card } from "@/components/ui/Card";
 import { ButtonLink } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Services — Consulting, Implementation, Training",
+  title: "Services — The Program and What's Beyond",
   description:
-    "What comes after the assessment: consulting, implementation support, and training tailored to your business.",
+    "The AI Growth Program covers assessment, course, and coaching. When more help is needed, we offer follow-on consulting and automations.",
 };
 
 const services = [
   {
+    icon: Users,
+    title: "Live Coaching (in the program)",
+    body: "Three working sessions with us, included in the program. We use them to take what the course teaches and apply it directly to your business.",
+  },
+  {
     icon: Compass,
-    title: "Consulting",
-    body: "For businesses that need expert guidance, planning, and direct support. We help you make smart AI decisions based on how your company really works.",
+    title: "Follow-on Consulting",
+    body: "After the program, some businesses want deeper hands-on guidance. We continue working with you to refine direction, plan rollouts, and make decisions.",
   },
   {
     icon: Workflow,
-    title: "Automations",
-    body: "For businesses ready to remove busywork and scale. We design and build the workflows, integrations, and AI-driven systems that make your operation run itself.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Courses and Training",
-    body: "For teams and owners who need practical education, better understanding, and a stronger base before moving forward.",
+    title: "Automations Build-out",
+    body: "When the right opportunity is clear, we design and build the workflows, integrations, and AI-driven systems that remove busywork — folded into our consulting work.",
   },
 ];
 
@@ -38,10 +38,11 @@ export default function ServicesPage() {
         eyebrow="Services"
         title={
           <>
-            What comes <span className="text-navy/60">after the assessment</span>
+            The program — and{" "}
+            <span className="text-navy/60">what's beyond it</span>
           </>
         }
-        lede="Once we see what your business needs, we guide the right next step — or we tell you to wait."
+        lede="The AI Growth Program covers most of what an established business needs. When you need more, our consulting and automations work picks up where the program leaves off."
       />
 
       <Section tone="surface">
@@ -70,13 +71,13 @@ export default function ServicesPage() {
           <div className="mx-auto max-w-3xl text-center">
             <SectionHeading
               align="center"
-              eyebrow="A note"
-              title="Not every company needs the same next step."
-              lede="That is why the assessment comes first. We do not force AI where it does not belong."
+              eyebrow="Where to start"
+              title="Most businesses start with the program."
+              lede="Book a discovery call and we'll talk through whether the program is right for you, or whether something else makes more sense."
             />
             <div className="mt-10 flex justify-center">
-              <ButtonLink href="/assessment/start" variant="primary" size="lg" withArrow>
-                Start with the AI Assessment
+              <ButtonLink href="/contact" variant="primary" size="lg" withArrow>
+                Book a Discovery Call
               </ButtonLink>
             </div>
           </div>

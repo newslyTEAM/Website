@@ -7,15 +7,16 @@ const nav = [
     items: [
       { label: "About", href: "/about" },
       { label: "Services", href: "/services" },
-      { label: "Courses", href: "/courses" },
       { label: "Contact", href: "/contact" },
     ],
   },
   {
-    heading: "Get started",
+    heading: "The program",
     items: [
+      { label: "How it works", href: "/#how-it-works" },
       { label: "AI Assessment", href: "/assessment" },
-      { label: "Start assessment", href: "/assessment/start" },
+      { label: "The Course", href: "/courses" },
+      { label: "Book a discovery call", href: "/contact" },
     ],
   },
   {
@@ -35,8 +36,8 @@ export function Footer() {
           <div>
             <Logo tone="light" />
             <p className="mt-6 max-w-xs text-bg/70 text-[0.9375rem] leading-relaxed">
-              Clear AI guidance for established businesses. Know what is ready,
-              what is not, and what to do next.
+              The AI Growth Program for established businesses. Assessment,
+              course, and coaching in one structured path.
             </p>
           </div>
 
@@ -72,7 +73,7 @@ export function Footer() {
             className="text-gold/90 text-[0.8125rem] tracking-[0.14em] uppercase"
             style={{ fontFamily: "var(--font-sans)" }}
           >
-            Clarity before AI. Growth after.
+            Turn AI Into Real Growth
           </p>
         </div>
       </div>

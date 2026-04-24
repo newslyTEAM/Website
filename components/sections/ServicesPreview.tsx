@@ -1,28 +1,34 @@
 import Link from "next/link";
-import { ArrowRight, Compass, Workflow, GraduationCap } from "lucide-react";
+import { ArrowRight, ClipboardCheck, GraduationCap, Users } from "lucide-react";
 
-const services = [
+const pillars = [
   {
-    icon: Compass,
-    title: "Consulting",
-    body: "Expert guidance, planning, and direct support tailored to how your company really works.",
-  },
-  {
-    icon: Workflow,
-    title: "Automations",
-    body: "Build the workflows, integrations, and AI-driven systems that remove busywork and scale your operation.",
+    icon: ClipboardCheck,
+    title: "AI Assessment",
+    body: "We start by reviewing how your business runs today and where AI actually fits — so the rest of the program is built around your reality.",
+    href: "/assessment",
+    cta: "About the assessment",
   },
   {
     icon: GraduationCap,
-    title: "Courses & Training",
-    body: "Practical education for owners and teams to build a stronger base before moving forward.",
+    title: "The Course",
+    body: "Practical AI training made for established businesses. Self-paced, no fluff — just what you and your team need to use AI well.",
+    href: "/courses",
+    cta: "About the course",
+  },
+  {
+    icon: Users,
+    title: "3 Live Coaching Calls",
+    body: "Three working sessions with us to take what the course teaches and put it to work in your specific business.",
+    href: "/services",
+    cta: "About coaching",
   },
 ];
 
 export function ServicesPreview() {
   return (
     <ul className="grid gap-5 md:grid-cols-3">
-      {services.map((s) => (
+      {pillars.map((s) => (
         <li
           key={s.title}
           className="group relative overflow-hidden bg-white rounded-lg border border-line p-8 shadow-[var(--shadow-soft)] hover:shadow-[var(--shadow-lift)] hover:-translate-y-0.5 transition-all duration-200"
@@ -55,10 +61,10 @@ export function ServicesPreview() {
           </h3>
           <p className="text-[0.9375rem] leading-relaxed text-slate">{s.body}</p>
           <Link
-            href="/services"
+            href={s.href}
             className="mt-6 inline-flex items-center gap-2 text-[0.875rem] font-semibold text-navy hover:text-blue"
           >
-            Learn more
+            {s.cta}
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" strokeWidth={1.75} />
           </Link>
         </li>

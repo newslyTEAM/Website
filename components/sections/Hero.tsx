@@ -9,24 +9,23 @@ export function Hero() {
 
       <Container className="relative pt-16 pb-20 md:pt-28 md:pb-32">
         <div className="relative max-w-4xl">
-          <span className="eyebrow mb-6">Consulting · Automations · Courses</span>
+          <span className="eyebrow mb-6">The AI Growth Program</span>
           <h1 className="text-navy">Turn AI Into Real Growth!</h1>
           <p className="mt-7 max-w-2xl text-[1.125rem] md:text-xl leading-relaxed text-slate">
-            Newsly Global is a consultancy for established businesses. We offer{" "}
-            <span className="text-navy font-semibold">consulting</span>,{" "}
-            <span className="text-navy font-semibold">automations</span>, and{" "}
-            <span className="text-navy font-semibold">courses</span>. Every
-            engagement starts with our{" "}
-            <span className="text-navy font-semibold">AI Assessment</span>, so
-            you know what is worth doing.
+            A structured program for established businesses. It pairs our{" "}
+            <span className="text-navy font-semibold">AI Assessment</span>, a
+            practical{" "}
+            <span className="text-navy font-semibold">course</span>, and{" "}
+            <span className="text-navy font-semibold">three live coaching calls</span>{" "}
+            — so you know where AI fits, and actually put it to work.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row sm:items-center gap-3">
-            <ButtonLink href="/assessment" variant="primary" size="lg" withArrow>
-              Start with the Assessment
+            <ButtonLink href="/contact" variant="primary" size="lg" withArrow>
+              Book a Discovery Call
             </ButtonLink>
-            <ButtonLink href="/services" variant="secondary" size="lg">
-              See What We Do
+            <ButtonLink href="/#how-it-works" variant="secondary" size="lg">
+              See How It Works
             </ButtonLink>
           </div>
 

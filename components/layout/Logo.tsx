@@ -56,7 +56,7 @@ export function Logo({
             tone === "dark" ? "text-slate" : "text-bg/60",
           )}
         >
-          AI Clarity
+          AI Growth
         </span>
       </span>
     </Link>

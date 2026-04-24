@@ -5,9 +5,9 @@ import { MobileMenu } from "@/components/layout/MobileMenu";
 
 const nav = [
   { label: "Home", href: "/" },
-  { label: "AI Assessment", href: "/assessment" },
+  { label: "The Program", href: "/#how-it-works" },
+  { label: "Course", href: "/courses" },
   { label: "Services", href: "/services" },
-  { label: "Courses", href: "/courses" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
@@ -37,8 +37,8 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <ButtonLink href="/assessment" variant="primary" size="md">
-            Get Assessment
+          <ButtonLink href="/contact" variant="primary" size="md">
+            Book a Discovery Call
           </ButtonLink>
         </div>
 

@@ -8,9 +8,9 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Users, Briefcase, Settings2 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Courses — Practical AI Learning",
+  title: "The Course — Practical AI Learning",
   description:
-    "Simple, useful AI training built for established businesses. For owners, leadership, operations, and staff.",
+    "The course inside The AI Growth Program. Practical AI training for owners, leadership, and operations — with three live coaching calls to put it to work.",
 };
 
 const tracks = [
@@ -35,20 +35,19 @@ export default function CoursesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Courses"
+        eyebrow="The course"
         title={
           <>
-            Practical AI learning for{" "}
-            <span className="text-navy/60">owners and teams</span>
+            Practical AI learning,{" "}
+            <span className="text-navy/60">backed by live coaching</span>
           </>
         }
-        lede="Simple, useful training designed to help you understand AI without the noise."
+        lede="The course is the learning core of The AI Growth Program. Self-paced lessons, no fluff — paired with three live calls to apply it to your business."
       >
         <p className="max-w-2xl text-slate text-[1rem] leading-relaxed">
-          Our courses are built for real businesses. They are made to help you
-          and your team understand how AI works, where it fits, and how to use
-          it in a smart way. No fluff. No hype. Just practical learning you can
-          use.
+          Our course is built for real businesses. It teaches you and your team
+          how AI works, where it fits, and how to use it well. The three live
+          coaching calls in the program turn that knowledge into action.
         </p>
       </PageHero>
 
@@ -84,15 +83,15 @@ export default function CoursesPage() {
             <SectionHeading
               align="center"
               eyebrow="Not sure yet?"
-              title="See if training is your right next step."
-              lede="The AI Assessment tells you whether training, consulting, or implementation makes the most sense."
+              title="See if the program is your right next step."
+              lede="Book a discovery call. We'll talk through your business and whether the program fits — no pressure, no pitch."
             />
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-3">
-              <ButtonLink href="/assessment/start" variant="primary" size="lg" withArrow>
-                Start with the AI Assessment
+              <ButtonLink href="/contact" variant="primary" size="lg" withArrow>
+                Book a Discovery Call
               </ButtonLink>
-              <ButtonLink href="/contact" variant="secondary" size="lg">
-                Contact Us
+              <ButtonLink href="/#how-it-works" variant="secondary" size="lg">
+                See how the program works
               </ButtonLink>
             </div>
           </div>

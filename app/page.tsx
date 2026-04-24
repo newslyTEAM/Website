@@ -14,29 +14,29 @@ import { ConcentricRings, CrossHair } from "@/components/decor";
 
 const steps = [
   {
-    title: "We review your business",
-    body: "We look at how your business runs today, where work slows down, and where AI may help.",
+    title: "Book a discovery call",
+    body: "We talk through your business, where AI fits, and whether the program is the right move right now.",
   },
   {
-    title: "We assess readiness",
-    body: "We evaluate your systems, workflows, team habits, and decision points to see what is ready now.",
+    title: "Enroll in the program",
+    body: "You get access to the course, and we schedule your assessment and three coaching calls.",
   },
   {
-    title: "We show what makes sense",
-    body: "You get a clear view of where AI fits, where it does not, and what next step is right for your business.",
+    title: "Start with the assessment",
+    body: "We review how your business runs today and where AI actually fits — your roadmap for the rest of the program.",
   },
   {
-    title: "We guide the next move",
-    body: "Based on your results, we may suggest consulting, support, training, courses, or no action yet.",
+    title: "Apply what you learn",
+    body: "Move through the course at your pace, then meet with us three times to put it to work in your business.",
   },
 ];
 
-const offerBullets = [
-  "See if your business is truly ready for AI",
-  "Find the best places to use AI",
-  "Spot gaps in systems, data, and workflow",
-  "Avoid costly tools you do not need",
-  "Get a clear recommendation for what comes next",
+const programBullets = [
+  "An AI Assessment built around your business",
+  "A practical course made for established companies",
+  "Three live coaching calls with us",
+  "Clear, useful direction — no hype",
+  "Optional follow-on consulting if you need it",
 ];
 
 const idealFor = [
@@ -62,10 +62,10 @@ const proofs = [
 
 const outcomes = [
   "A clear picture of your AI readiness",
-  "A better view of process gaps",
-  "Practical ideas with business value",
-  "Less confusion",
-  "A smart next-step recommendation",
+  "A practical understanding of where AI fits in your business",
+  "A team that knows how to use AI well",
+  "Three live coaching calls focused on your specific work",
+  "A real plan you have already started executing",
 ];
 
 export default function HomePage() {
@@ -73,13 +73,13 @@ export default function HomePage() {
     <>
       <Hero />
 
-      {/* WHAT WE DO — three pillars */}
+      {/* WHAT'S INSIDE THE PROGRAM */}
       <Section tone="surface">
         <Container>
           <SectionHeading
-            eyebrow="What we do"
-            title="Three ways we help established businesses use AI well"
-            lede="We are a consultancy for companies that want to move deliberately. Pick the fit — or start with the assessment if you are not sure yet."
+            eyebrow="Inside the program"
+            title="One program. Three parts that work together."
+            lede="The AI Growth Program pairs an assessment, a practical course, and three live coaching calls — built so you actually use what you learn."
           />
           <div className="mt-12">
             <ServicesPreview />
@@ -92,7 +92,7 @@ export default function HomePage() {
         <Container>
           <SectionHeading
             eyebrow="The problem"
-            title="Most business owners do not need more AI noise. They need clear answers."
+            title="Most business owners do not need more AI noise. They need a real plan."
             lede={
               <>
                 AI can save time, improve work, and support growth. But not every
@@ -107,24 +107,27 @@ export default function HomePage() {
               what fits, what is useful, or what will waste money.
             </p>
             <p>
-              Newsly Global helps you slow down, look at your business clearly,
-              and make the right next move — whether that is consulting, an
-              automation build, training, or waiting.
+              The AI Growth Program gives you a clear path: an assessment to see
+              where you stand, a course to teach what matters, and three live
+              coaching calls to make sure it actually gets used.
             </p>
           </div>
         </Container>
       </Section>
 
-      {/* OFFER */}
+      {/* PROGRAM CALLOUT */}
       <Section tone="surface">
         <Container>
           <PriceCallout
-            title="Every engagement starts with the AI Assessment"
-            bullets={offerBullets}
-            ctaLabel="Get Your Assessment"
-            ctaHref="/assessment/start"
-            secondaryLabel="See what's included"
-            secondaryHref="/assessment"
+            eyebrow="The program"
+            title="The AI Growth Program"
+            bullets={programBullets}
+            ctaLabel="Book a Discovery Call"
+            ctaHref="/contact"
+            secondaryLabel="See how it works"
+            secondaryHref="/#how-it-works"
+            rightTitle="One unified program"
+            rightBody="Assessment, course, and coaching in one structured path."
           />
         </Container>
       </Section>
@@ -135,14 +138,14 @@ export default function HomePage() {
           <SectionHeading
             eyebrow="How it works"
             title="Simple. Clear. Useful."
-            lede="A focused, four-step process built around real business review — not generic advice."
+            lede="A focused, four-step path from discovery call to real results in your business."
           />
           <div className="mt-12">
             <StepList steps={steps} />
           </div>
           <div className="mt-12 flex justify-center">
-            <ButtonLink href="/assessment/start" variant="primary" size="lg" withArrow>
-              Start Your Assessment
+            <ButtonLink href="/contact" variant="primary" size="lg" withArrow>
+              Book a Discovery Call
             </ButtonLink>
           </div>
         </Container>
@@ -239,7 +242,7 @@ export default function HomePage() {
               <SectionHeading
                 eyebrow="What you leave with"
                 title="Outcomes, not theory"
-                lede="Every assessment ends with specifics you can act on or defend against."
+                lede="By the end of the program you have a plan, the skills, and the working sessions to put AI to work."
               />
               <div aria-hidden className="hidden lg:block absolute -left-24 top-10 opacity-90">
                 <ConcentricRings size={220} className="text-navy/15" />

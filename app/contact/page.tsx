@@ -8,7 +8,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Questions about the AI Assessment, consulting, or training? Reach out and we'll point you in the right direction.",
+    "Questions about The AI Growth Program, coaching, or follow-on consulting? Reach out and we'll point you in the right direction.",
 };
 
 const touchpoints = [
@@ -36,7 +36,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Let's talk about what your business needs"
-        lede="Have questions about the AI Assessment, consulting, or training? Reach out and our team will point you in the right direction."
+        lede="Have questions about The AI Growth Program, coaching, or follow-on consulting? Reach out and our team will point you in the right direction."
       />
 
       <Section tone="surface">
@@ -76,14 +76,13 @@ export default function ContactPage() {
                 ))}
               </ul>
               <div className="mt-10 p-6 rounded-lg border border-line bg-bg">
-                <div className="eyebrow mb-3">Prefer action?</div>
+                <div className="eyebrow mb-3">Ready to apply?</div>
                 <p className="text-[0.9375rem] text-slate leading-relaxed">
-                  If you already know you want clear answers about AI for your
-                  business, the{" "}
-                  <a href="/assessment" className="text-navy font-semibold underline underline-offset-4 decoration-gold/70">
-                    $1,495 AI Assessment
+                  If you already know you want in, you can{" "}
+                  <a href="/assessment/start" className="text-navy font-semibold underline underline-offset-4 decoration-gold/70">
+                    apply for the program
                   </a>{" "}
-                  is the right first move.
+                  directly. Otherwise, send us a note and we'll set up a discovery call.
                 </p>
               </div>
             </div>
