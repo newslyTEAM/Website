@@ -10,10 +10,7 @@ export function Hero() {
       <Container className="relative pt-16 pb-20 md:pt-28 md:pb-32">
         <div className="relative max-w-4xl">
           <span className="eyebrow mb-6">Consulting · Automations · Courses</span>
-          <h1 className="text-navy">
-            AI help that fits how your business actually runs,{" "}
-            <span className="text-navy/60">not how the hype says it should.</span>
-          </h1>
+          <h1 className="text-navy">Turn AI Into Real Growth!</h1>
           <p className="mt-7 max-w-2xl text-[1.125rem] md:text-xl leading-relaxed text-slate">
             Newsly Global is a consultancy for established businesses. We offer{" "}
             <span className="text-navy font-semibold">consulting</span>,{" "}
